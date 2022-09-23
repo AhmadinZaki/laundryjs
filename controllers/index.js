@@ -1,5 +1,6 @@
-var userControler = require('./user.controller')
+var userController = require("./user.controller");
 
 module.exports = (app) => {
-    app.use('/user/signup', userControler.userSignup )
-}
+  app.use("/user/signup", userController.UserSignup);
+  app.use("/user/signin", userController.UserSignin);
+};
